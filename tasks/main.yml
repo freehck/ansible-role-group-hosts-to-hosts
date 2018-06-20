@@ -2,5 +2,5 @@
   lineinfile:
     dest: /etc/hosts
     regexp: ".*{{ hostvars[item]['inventory_hostname'] }}(\\s*)$"
-    line: "{{ hostvars[item]['ansible_""{{iface}}""']['ipv4']['address'] }}	{{ hostvars[item]['inventory_hostname'] }}"
+    line: "{{ hostvars[item]['ansible_'+iface]['ipv4']['address'] }}	{{ hostvars[item]['inventory_hostname'] }}"
   with_items: "{{ groups[group] }}"
