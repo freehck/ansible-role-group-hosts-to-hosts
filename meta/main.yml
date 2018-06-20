@@ -1,0 +1,18 @@
+galaxy_info:
+  author: freehck
+  description: add to /etc/hosts lines about machines in specified group
+  license: Unknown
+
+  min_ansible_version: 2.5
+
+  platforms:
+  - name: Ubuntu
+    versions:
+      - all
+  - name: Debian
+    versions:
+      - all
+
+  galaxy_tags: [ system, hosts ]
+
+dependencies: []
